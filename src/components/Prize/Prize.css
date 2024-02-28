@@ -1,0 +1,80 @@
+.prize-container {
+  display: flex;
+  padding-top: 10px;
+}
+
+.trofi-container {
+  flex: 0 0 32%;
+  height: 0;
+  padding-bottom: 30%;
+  position: relative;
+}
+
+.trofi-image {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+}
+
+.text-container {
+  flex: 1;
+  padding-left: 20px;
+  padding-right: 8px;
+  line-height: 1.4;
+}
+
+.text-container p:first-of-type {
+  font-weight: 600; /* Make the first paragraph semi-bold */
+}
+
+.text-container ul {
+  font-weight: 500; /* Make the list items less bold */
+}
+
+.text-container p:last-of-type {
+  font-weight: 500; /* Make the last paragraph semi-bold */
+}
+
+.text-container strong {
+  font-weight: bold; /* Make strong tags bolder */
+}
+
+.reward-image {
+  max-width: 100%;
+}
+
+.text-container p,
+.text-container ul,
+.text-container li {
+  font-size: 0.95em;
+}
+
+/* Add media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .prize-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trofi-container {
+    width: 30%;
+    padding-bottom: 50%;
+  }
+
+  .text-container {
+    padding-top: 20px;
+    padding: 6px;
+    text-align: center;
+  }
+
+  .text-container p,
+  .text-container ul,
+  .text-container li {
+    font-size: 0.8em;
+  }
+
+  .reward-image {
+    max-width: 85%;
+  }
+}

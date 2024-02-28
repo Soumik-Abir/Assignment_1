@@ -1,0 +1,29 @@
+.header-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+  }
+  
+  .centered-image {
+    max-width: 26%; /* Ensure the logo image doesn't exceed its container width */
+    max-height: 60%; /* Ensure the logo image doesn't exceed its container height */
+    width: auto; /* Allow the width to adjust proportionally based on the container */
+    height: auto; /* Allow the height to adjust proportionally based on the container */
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .centered-image {
+      max-width: 50%; /* Adjust max-width for smaller screens */
+      max-height: auto; /* Allow the height to adjust automatically */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .centered-image {
+      max-width: 60%; /* Adjust max-width for even smaller screens */
+    }
+  }
+  

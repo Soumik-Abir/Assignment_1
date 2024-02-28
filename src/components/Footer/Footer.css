@@ -1,0 +1,62 @@
+.footer-container {
+  padding: 5px; /* Add padding for spacing */
+}
+
+.red-box {
+  background-color: #fd4242; /* Set background color to red */
+  border-radius: 2px;
+  padding: 20px; /* Add padding for spacing */
+  display: flex;
+}
+
+.row {
+  flex: 1; /* Each column takes up equal space */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
+  color: white; /* Set text color to white */
+  margin-bottom: 10px;
+}
+
+.icon {
+  margin-bottom: 20px; /* Add margin below the icon */
+  margin-right: 5px;
+  font-size: 24px; /* Set icon size */
+}
+
+.phone-icon {
+  border-radius: 50%; /* Make the phone icon fully rounded */
+}
+
+a {
+  color: white; /* Set link color to white */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .red-box {
+    flex-direction: row; /* Stack columns vertically on smaller screens */
+    padding: 5px;
+  }
+
+  .row {
+    &:hover {
+      color: black;
+    }
+    margin-bottom: 0px;
+  }
+
+  .icon {
+    margin-bottom: 0px; /* Add margin below the icon */
+    margin-right: 0px;
+    font-size: 20px; /* Reduce icon size for smaller screens */
+  }
+  a {
+    display: none; /* Hide links on smaller screens */
+  }
+  .row p {
+    display: none;
+  }
+}

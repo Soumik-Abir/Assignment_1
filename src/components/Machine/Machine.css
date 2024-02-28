@@ -1,0 +1,48 @@
+.machine-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 20px; /* Add padding for spacing */
+    padding-bottom: 4px;
+  }
+  
+  .machine-container p:first-of-type,
+  .machine-container p:last-of-type {
+    font-weight: 600; /* Make the first and last paragraphs semi-bold */
+    font-size: 0.88em;
+  }
+  
+  .machine-image-container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    width: 100%; /* Set container width to 100% */
+  }
+  
+  .machine-image {
+    padding: 10px; /* Add padding for spacing */
+    max-width: 80%; /* Adjust maximum width for the machine image */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .red-line {
+    width: 98%; /* Adjust the width of the line */
+    height: 2px; /* Adjust the height of the line */
+    background-color: red; /* Set the color of the line */
+    margin: 12px auto; /* Center the line horizontally and add some margin */
+  }
+  
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .machine-container p:first-of-type,
+    .machine-container p:last-of-type {
+      font-size: 0.7em; /* Reduce font size for smaller screens */
+      text-align: center;
+    }
+
+    .machine-image {
+      max-width: 95%; /* Adjust maximum width for the machine image on smaller screens */
+    }
+  }
+  
